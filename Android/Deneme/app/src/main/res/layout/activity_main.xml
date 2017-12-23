@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <Button
+        android:id="@+id/forward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/forward_right_btn"
+        android:layout_toStartOf="@+id/forward_right_btn"
+        android:background="@drawable/ileri"
+        android:text="ileri" />
+
+    <Button
+        android:id="@+id/forward_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zero_btn"
+        android:layout_toLeftOf="@+id/zero_btn"
+        android:layout_toStartOf="@+id/zero_btn"
+        android:background="@drawable/sol_ileri"
+        android:text="sol ileri" />
+
+    <Button
+        android:id="@+id/forward_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/zero_btn"
+        android:layout_alignLeft="@+id/reverse_right_btn"
+        android:layout_alignStart="@+id/reverse_right_btn"
+        android:background="@drawable/sag_ileri"
+        android:text="sağ ileri" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="geri git"
+        android:id="@+id/reverse_btn"
+        android:background="@drawable/geri"
+        android:layout_above="@+id/bluetooth_connect_btn"
+        android:layout_alignLeft="@+id/bluetooth_connect_btn"
+        android:layout_alignStart="@+id/bluetooth_connect_btn"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:id="@+id/zero_btn"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/reverse_left_btn"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@+id/forward_right_btn"
+        android:layout_toStartOf="@+id/forward_right_btn"
+        android:background="@mipmap/don"
+        android:elevation="0dp" />
+
+    <Button
+        android:id="@+id/nos_btn"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/nosharbi"
+        android:elevation="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sol geri"
+        android:id="@+id/reverse_left_btn"
+        android:background="@drawable/sol_geri"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_alignLeft="@+id/forward_left_btn"
+        android:layout_alignStart="@+id/forward_left_btn" />
+
+    <Button
+        android:id="@+id/reverse_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reverse_btn"
+        android:layout_toEndOf="@+id/reverse_btn"
+        android:layout_toRightOf="@+id/reverse_btn"
+        android:background="@drawable/sag_geri"
+        android:text="sağ geri" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="bağlan"
+        android:textStyle="italic"
+        android:textSize="40px"
+        android:id="@+id/bluetooth_connect_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
